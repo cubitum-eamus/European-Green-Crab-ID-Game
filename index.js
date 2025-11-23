@@ -7,7 +7,7 @@ const CRAB_TYPES = [
     name: 'European Green Crab (EGC)',
     isEGC: true,
     spines: 5,
-    imageUrl: './img/egC.png',
+    imageUrl: './img/egc.png',
     fallbackText: 'EGC'
   },
   {
