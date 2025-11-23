@@ -1,0 +1,74 @@
+        /* Custom styles for a clean, maritime interface */
+        body {
+          font-family: 'Inter', sans-serif;
+          background-color: #0d2538;
+          /* Deep Ocean Blue */
+          color: #ecf0f1;
+          padding: 1rem;
+        }
+
+        .game-card {
+          max-width: 1200px;
+          margin: 0 auto;
+          background-color: #1a365d;
+          /* Dark Blue Card */
+          border-radius: 1.5rem;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          min-height: 95vh;
+        }
+
+        .game-area {
+          flex-grow: 1;
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          background: linear-gradient(to top, #2980b9, #1a365d);
+          /* Blue gradient water */
+          border: 4px solid #34d399;
+          border-radius: 1rem;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* Styling for the moving crab images */
+        .crab-image {
+          position: absolute;
+          width: 100px;
+          /* Base size */
+          height: 100px;
+          border-radius: 0.5rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          border: 3px solid transparent;
+          /* Ensure images fit nicely within their boundary */
+          object-fit: cover;
+          /* Fallback for broken images */
+          background-color: #333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.5rem;
+          text-align: center;
+        }
+
+        /* Utility class for quick score feedback */
+        .feedback-win {
+          border-color: #2ecc71 !important;
+          box-shadow: 0 0 15px #2ecc71;
+        }
+
+        .feedback-lose {
+          border-color: #e74c3c !important;
+          box-shadow: 0 0 15px #e74c3c;
+        }
+
+        /* Responsive adjustments for crab size on smaller screens */
+        @media (max-width: 768px) {
+          .crab-image {
+            width: 75px;
+            height: 75px;
+          }
+        }
